@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14724.3" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14724.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="HeaderView" customModule="ImageClassification_macOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="LHS-CC-ely">
+                    <rect key="frame" x="0.0" y="37" width="480" height="5"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZtB-65-tZs">
+                    <rect key="frame" x="18" y="11" width="444" height="19"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="eDW-TO-qfJ">
+                        <font key="font" metaFont="systemSemibold" size="16"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="LHS-CC-ely" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="3Mf-8V-rZb"/>
+                <constraint firstItem="ZtB-65-tZs" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="LDo-5X-SMe"/>
+                <constraint firstItem="ZtB-65-tZs" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="PQC-ey-bO9"/>
+                <constraint firstItem="LHS-CC-ely" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="c1I-dJ-9Ny"/>
+                <constraint firstAttribute="trailing" secondItem="LHS-CC-ely" secondAttribute="trailing" id="mhf-AV-10K"/>
+                <constraint firstAttribute="trailing" secondItem="ZtB-65-tZs" secondAttribute="trailing" constant="20" id="t4A-fB-Swn"/>
+            </constraints>
+            <connections>
+                <outlet property="sectionTitle" destination="ZtB-65-tZs" id="U6N-MU-HWB"/>
+            </connections>
+        </customView>
+    </objects>
+</document>

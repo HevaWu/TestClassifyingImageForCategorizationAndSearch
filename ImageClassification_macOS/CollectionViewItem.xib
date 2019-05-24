@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14724.3" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14724.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="ImageClassification_macOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A7M-ie-SF0">
+                    <rect key="frame" x="0.0" y="20" width="128" height="128"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="VmM-Rp-Kbc"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GbX-aP-of1">
+                    <rect key="frame" x="-2" y="0.0" width="132" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="4Ol-XA-ZK6"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="MkF-ES-z5J">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="A7M-ie-SF0" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="MV1-tc-h2j"/>
+                <constraint firstAttribute="trailing" secondItem="GbX-aP-of1" secondAttribute="trailing" id="P1n-s2-eTa"/>
+                <constraint firstItem="GbX-aP-of1" firstAttribute="top" secondItem="A7M-ie-SF0" secondAttribute="bottom" id="dCb-gl-b18"/>
+                <constraint firstItem="GbX-aP-of1" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="pAh-GO-aL2"/>
+                <constraint firstAttribute="bottom" secondItem="GbX-aP-of1" secondAttribute="bottom" id="rVR-Fl-RdT"/>
+                <constraint firstAttribute="trailing" secondItem="A7M-ie-SF0" secondAttribute="trailing" id="soT-0v-Nq5"/>
+                <constraint firstItem="A7M-ie-SF0" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="sts-nW-yT4"/>
+            </constraints>
+            <point key="canvasLocation" x="-238" y="2"/>
+        </customView>
+        <customObject id="qyS-bj-edk" customClass="CollectionViewItem" customModule="ImageClassification_macOS" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="A7M-ie-SF0" id="6yT-gd-iXh"/>
+                <outlet property="textField" destination="GbX-aP-of1" id="rdL-y0-liX"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="LQv-2i-rV7"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>
